@@ -5,3 +5,4 @@ work/
 *.tfstate.*
 .envrc
 *.tfvars
+**/terraform.tfvars.example
