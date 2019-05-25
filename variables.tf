@@ -1,5 +1,6 @@
 variable "platform_name" {
   description = "The name of the cluster that is used for tagging some resources"
+  default = "okd"
 }
 
 variable "availability_zones" {
@@ -41,7 +42,7 @@ variable "compute_node_instance_type" {
 
 variable "use_community" {
   description = "Sets true if you want to install OKD."
-  default     = false
+  default     = true
 }
 
 variable "rh_subscription_pool_id" {
@@ -67,14 +68,14 @@ variable "platform_domain" {
 }
 
 variable "platform_domain_administrator_email" {
-  default = ""
+  default = "dealyb@saic.com"
 }
 
 variable "identity_providers" {
     type        = "list"
     description = "The identity providers to enable (AllowAllIdentityProvider, GoogleIdentityProvider)"
     default     = [
-        "AllowAllIdentityProvider"
+        "HTPasswdPasswordIdentityProvider"
     ]
 }
 

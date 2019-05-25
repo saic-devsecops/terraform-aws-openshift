@@ -20,7 +20,7 @@ compute_node_count = 3
 compute_node_instance_type = "m4.large"
 
 # Platform name
-platform_name = "mycluster"
+platform_name = "ocp"
 
 # If you want to use OKD, set true
 use_community = false
