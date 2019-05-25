@@ -1,4 +1,6 @@
 # Terraform OpenShift Container Platform Module
+this is a fork from literalice/terraform-aws-openshift  ( https://github.com/literalice/terraform-aws-openshift )
+and can be used to bring up OKD in AWS.
 
 Builds OpenShift reference archtecture on AWS.
 
