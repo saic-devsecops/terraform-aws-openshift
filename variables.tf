@@ -75,7 +75,7 @@ variable "identity_providers" {
     type        = "list"
     description = "The identity providers to enable (AllowAllIdentityProvider, GoogleIdentityProvider)"
     default     = [
-        "HTPasswdPasswordIdentityProvider"
+        "AllowAllIdentityProvider"
     ]
 }
 

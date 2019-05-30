@@ -15,6 +15,7 @@ data "template_file" "template_inventory" {
     named_certificate               = "${(var.public_certificate_pem == "") ? false : true}"
     use_allow_all_identity_provider = "${contains(var.identity_providers, "AllowAllIdentityProvider")}"
     use_google_identity_provider    = "${contains(var.identity_providers, "GoogleIdentityProvider")}"
+    use_htpasswd_identity_provider  = "${contains(var.identity_providers, "HTPasswdPasswordIdentityProvider")}"
     google_client_id                = "${var.google_client_id}"
     google_client_secret            = "${var.google_client_secret}"
     google_client_domain            = "${var.google_client_domain}"
