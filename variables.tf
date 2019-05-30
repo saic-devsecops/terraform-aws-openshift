@@ -64,7 +64,6 @@ variable "rhn_password" {
 
 variable "platform_domain" {
   description = "Public DNS subdomain for access to services served in the cluster"
-  default     = ""
 }
 
 variable "platform_domain_administrator_email" {
@@ -75,7 +74,7 @@ variable "identity_providers" {
     type        = "list"
     description = "The identity providers to enable (AllowAllIdentityProvider, GoogleIdentityProvider)"
     default     = [
-        "AllowAllIdentityProvider"
+        "HTPasswdPasswordIdentityProvider"
     ]
 }
 
