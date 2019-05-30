@@ -35,7 +35,7 @@ platform_domain_administrator_email = "dealyb@saic.com"
 rhn_username = "brian.dealy"
 
 # Red Hat Network password:
-rhn_password = "gr8Times!"
+rhn_password = "********"
 
 # OpenShift subscription's pool ID
-rh_subscription_pool_id = "8a85f98b635f3e6d0163d56ab31d74dc"
+rh_subscription_pool_id = "*******"
